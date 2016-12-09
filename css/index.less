@@ -1,0 +1,97 @@
+
+body,ul,li,a{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: "微软雅黑";
+}
+
+.content{
+    box-sizing: border-box;
+    .div1{
+        background: url(../images/home-bg.jpg);
+        background-size: cover;
+        width: 100%;
+        box-sizing: border-box;
+
+        .header{
+            width: 960px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            position: relative;
+            .navbar{
+                position: relative;
+                margin: 0 auto;
+                box-sizing: border-box;
+                overflow: hidden;
+                li{
+                    box-sizing: border-box;
+                    float: left;
+                    a{
+                        text-align: center;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        width: 192px;
+                        font-size: 34px;
+                        font-weight: 600;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+                    a.active{
+                           background: red; 
+                    }
+                }
+            }
+        }
+
+        .navFix{
+            position: fixed;
+            top: 0;
+            left: 192px;
+            // box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            // border-bottom: 1px solid #e3e3e3;
+            z-index: 99999;
+            // width: 1366px;
+            line-height: 80px;
+            height: 80px; 
+        }
+
+        .change{
+                    font-size: 24px!important;
+                    font-weight: 400!important;
+                    color: white!important;
+                }
+
+        .fixbg{
+            background: black;
+            display: none;
+            position: fixed;
+            height: 80px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            transition: 1s;
+        }
+
+
+       
+    }
+
+    .div2{
+        background: url(../images/bg-tile.png);
+        width: 100%;
+    }
+    .div3{
+        background: #27AE60;
+        width: 100%;
+    }
+    .div4{
+        background: #2980B9;
+        width: 100%;
+    }
+    .div5{
+        background: #C0392B;
+        width: 100%;
+    }
+}
+

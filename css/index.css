@@ -1,248 +1,86 @@
-body {
-    height: 100%;
-    width: 100%;
-    /*这里必须这么写*/
-    overflow: hidden;
-    /*height: 1200px;*/
+body,
+ul,
+li,
+a {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-family: "微软雅黑";
 }
-
-#aa {
-    width: 100%;
-    height: 608px;
-    background: red;
+.content {
+  box-sizing: border-box;
 }
-
-#img1 {
-    width: 100%;
+.content .div1 {
+  background: url(../images/home-bg.jpg);
+  background-size: cover;
+  width: 100%;
+  box-sizing: border-box;
 }
-
-.company {
-    width: 400px;
-    margin: 0 auto;
-    border: 1px #999999 solid;
+.content .div1 .header {
+  width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
 }
-
-
-/*定义一个名字为lefteaseinAnimate动画，实现从页面的左边淡入页面效果*/
-
-@keyframes lefteaseinAnimate {
-    0% {
-        transform: translateX(-2000px);
-        opacity: 0;
-    }
-    /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-    /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+.content .div1 .header .navbar {
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-
-@-webkit-keyframes lefteaseinAnimate {
-    0% {
-        -webkit-transform: translateX(-2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        opacity: 1;
-    }
+.content .div1 .header .navbar li {
+  box-sizing: border-box;
+  float: left;
 }
-
-@-o-keyframes lefteaseinAnimate {
-    0% {
-        -webkit-transform: translateX(-2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        opacity: 1;
-    }
+.content .div1 .header .navbar li a {
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 192px;
+  font-size: 34px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
 }
-
-@-ms-keyframes lefteaseinAnimate {
-    0% {
-        -webkit-transform: translateX(-2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        opacity: 1;
-    }
+.content .div1 .header .navbar li a.active {
+  background: red;
 }
-
-@-moz-keyframes lefteaseinAnimate {
-    0% {
-        -webkit-transform: translateX(-2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        opacity: 1;
-    }
+.content .div1 .navFix {
+  position: fixed;
+  top: 0;
+  left: 192px;
+  z-index: 99999;
+  line-height: 80px;
+  height: 80px;
 }
-
-.company_name {
-    animation: lefteaseinAnimate 1s ease 1;
-    /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
-    -webkit-animation: lefteaseinAnimate 1s ease 1;
-    -ms-animation: lefteaseinAnimate 1s ease 1;
-    -o-animation: lefteaseinAnimate 1s ease 1;
-    -moz-animation: lefteaseinAnimate 1s ease 1;
-    /*规定动画的最后状态为结束状态*/
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    -ms-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
+.content .div1 .change {
+  font-size: 24px!important;
+  font-weight: 400!important;
+  color: white!important;
 }
-
-
-/*定义一个名字为bottomeaseinAnimate动画，实现从页面的右边淡入页面效果*/
-
-@keyframes bottomeaseinAnimate {
-    0% {
-        transform: translateY(2000px);
-        opacity: 0;
-    }
-    /*在0%时设置文字在想X轴2000px位移处（右边），透明度为0，也就是看不见文字*/
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-    /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+.content .div1 .fixbg {
+  background: black;
+  display: none;
+  position: fixed;
+  height: 80px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  transition: 1s;
 }
-
-@-webkit-keyframes bottomeaseinAnimate {
-    0% {
-        -webkit-transform: translateY(2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateY(0px);
-        opacity: 1;
-    }
+.content .div2 {
+  background: url(../images/bg-tile.png);
+  width: 100%;
 }
-
-@-o-keyframes bottomeaseinAnimate {
-    0% {
-        -webkit-transform: translateY(2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateY(0px);
-        opacity: 1;
-    }
+.content .div3 {
+  background: #27AE60;
+  width: 100%;
 }
-
-@-ms-keyframes bottomeaseinAnimate {
-    0% {
-        -webkit-transform: translateY(2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateY(0px);
-        opacity: 1;
-    }
+.content .div4 {
+  background: #2980B9;
+  width: 100%;
 }
-
-@-moz-keyframes bottomeaseinAnimate {
-    0% {
-        -webkit-transform: translateY(2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-.company_bottom {
-    animation: bottomeaseinAnimate 1s ease 1;
-    /*调用已定义好的动画righteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
-    -webkit-animation: bottomeaseinAnimate 1s ease 1;
-    -moz-animation: bottomeaseinAnimate 1s ease 1;
-    -ms-animation: bottomeaseinAnimate 1s ease 1;
-    -o-animation: bottomeaseinAnimate 1s ease 1;
-    /*规定动画的最后状态为结束状态*/
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    -ms-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-}
-
-
-/*定义一个名字为righteaseinAnimate动画，实现从页面的右边淡入页面效果*/
-
-@keyframes righteaseinAnimate {
-    0% {
-        transform: translateX(2000px);
-        opacity: 0;
-    }
-    /*在0%时设置文字在想X轴2000px位移处（右边），透明度为0，也就是看不见文字*/
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-    /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
-}
-
-@-webkit-keyframes righteaseinAnimate {
-    0% {
-        -webkit-transform: translateX(2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@-o-keyframes righteaseinAnimate {
-    0% {
-        -webkit-transform: translateX(2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes righteaseinAnimate {
-    0% {
-        -webkit-transform: translateX(2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes righteaseinAnimate {
-    0% {
-        -webkit-transform: translateX(2000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-.company_introduce {
-    animation: righteaseinAnimate 1s ease 1;
-    /*调用已定义好的动画righteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
-    -webkit-animation: righteaseinAnimate 1s ease 1;
-    -moz-animation: righteaseinAnimate 1s ease 1;
-    -ms-animation: righteaseinAnimate 1s ease 1;
-    -o-animation: righteaseinAnimate 1s ease 1;
-    /*规定动画的最后状态为结束状态*/
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    -ms-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
+.content .div5 {
+  background: #C0392B;
+  width: 100%;
 }
