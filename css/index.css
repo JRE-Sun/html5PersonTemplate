@@ -1,4 +1,9 @@
-body,
+body {
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  font-family: "微软雅黑";
+}
 ul,
 li,
 a {
@@ -42,6 +47,9 @@ a {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.5);
 }
+.content .div1 .header .navbar li a .portrait {
+  border-radius: 50%;
+}
 .content .div1 .header .navbar li a.active {
   background: red;
 }
@@ -68,13 +76,204 @@ a {
   width: 100%;
   transition: 1s;
 }
+.content .div1 .Head-portrait {
+  position: relative;
+  left: 633px;
+  border-radius: 50%;
+  animation: topeaseinAnimate 1s ease 1;
+  /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+  -webkit-animation: topeaseinAnimate 1s ease 1;
+  -ms-animation: topeaseinAnimate 1s ease 1;
+  -o-animation: topeaseinAnimate 1s ease 1;
+  -moz-animation: topeaseinAnimate 1s ease 1;
+  /*规定动画的最后状态为结束状态*/
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+}
+.content .div1 h2 {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 80px;
+  height: 80px;
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+}
 .content .div2 {
   background: url(../images/bg-tile.png);
   width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.content .div2 div {
+  width: 960px;
+  line-height: 100px;
+  height: 100px;
+}
+.content .div2 div img {
+  position: relative;
+  opacity: 0;
+}
+.content .div2 div .img1 {
+  left: 80px;
+  top: 110px;
+  animation: righteaseinAnimate 1s ease 1;
+  /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+  -webkit-animation: righteaseinAnimate 1s ease 1;
+  -ms-animation: righteaseinAnimate 1s ease 1;
+  -o-animation: righteaseinAnimate 1s ease 1;
+  -moz-animation: righteaseinAnimate 1s ease 1;
+  /*规定动画的最后状态为结束状态*/
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+}
+.content .div2 div .img2 {
+  left: 1150px;
+  top: 110px;
+  animation: lefteaseinAnimate 1s infinite;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+  /*Safari and Chrome*/
+  -webkit-animation: lefteaseinAnimate 1s infinite;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0.2s;
+  /*规定动画的最后状态为结束状态*/
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+}
+.content .div2 div .img3 {
+  left: 55px;
+  top: 140px;
+  animation: righteaseinAnimate 1s ease 1;
+  /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+  -webkit-animation: righteaseinAnimate 1s ease 1;
+  -ms-animation: righteaseinAnimate 1s ease 1;
+  -o-animation: righteaseinAnimate 1s ease 1;
+  -moz-animation: righteaseinAnimate 1s ease 1;
+  /*规定动画的最后状态为结束状态*/
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+}
+.content .div2 div .img4 {
+  left: 1125px;
+  top: 140px;
+  animation: lefteaseinAnimate 1s infinite;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  /*Safari and Chrome*/
+  -webkit-animation: lefteaseinAnimate 1s infinite;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0.5s;
+  /*规定动画的最后状态为结束状态*/
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+}
+.content .div2 div .img5 {
+  left: 130px;
+  top: 170px;
+  animation: righteaseinAnimate 1s ease 1;
+  /*调用已定义好的动画lefteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+  -webkit-animation: righteaseinAnimate 1s ease 1;
+  -ms-animation: righteaseinAnimate 1s ease 1;
+  -o-animation: righteaseinAnimate 1s ease 1;
+  -moz-animation: righteaseinAnimate 1s ease 1;
+  /*规定动画的最后状态为结束状态*/
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+}
+.content .div2 div .img6 {
+  left: 1200px;
+  top: 170px;
+  animation: lefteaseinAnimate 1s infinite;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  /*Safari and Chrome*/
+  -webkit-animation: lefteaseinAnimate 1s infinite;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+  /*规定动画的最后状态为结束状态*/
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
 }
 .content .div3 {
   background: #27AE60;
   width: 100%;
+}
+.content .div3 .div3-content {
+  padding-top: 150px;
+  width: 960px;
+  margin: 0 auto;
+  /*下面注释这个会使图片下面出现阴影*/
+  /*div.flip-3d figure:after {
+            content: " ";
+            display: block;
+            height: 8vw;
+            width: 100%;
+            transform: rotateX(90deg);
+            background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+        }*/
+}
+.content .div3 .div3-content div.flip-3d {
+  perspective: 1200px;
+  width: 300px;
+  float: left;
+  height: 180px;
+  margin: 8px;
+}
+.content .div3 .div3-content div.flip-3d figure {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s transform;
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+}
+.content .div3 .div3-content div.flip-3d figure img {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+.content .div3 .div3-content div.flip-3d figure figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 180px;
+  top: 0;
+  transform: rotateY(0.5turn) translateZ(1px);
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  opacity: 0.6;
+  transition: 1s .5s opacity;
+}
+.content .div3 .div3-content div.flip-3d:hover figure {
+  transform: rotateY(0.5turn);
+}
+.content .div3 .div3-content div.flip-3d:hover figure figcaption {
+  opacity: 1;
 }
 .content .div4 {
   background: #2980B9;
@@ -83,4 +282,163 @@ a {
 .content .div5 {
   background: #C0392B;
   width: 100%;
+}
+/*定义一个名字为lefteaseinAnimate动画，实现从页面的左边淡入页面效果*/
+@keyframes topeaseinAnimate {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  /*在0%时设置文字在想X轴500px位移处（左边），透明度为0，也就是看不见文字*/
+  100% {
+    transform: translateY(-80px);
+    opacity: 1;
+  }
+  /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+@-webkit-keyframes topeaseinAnimate {
+  0% {
+    -webkit-transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-110px);
+    opacity: 1;
+  }
+}
+@-o-keyframes topeaseinAnimate {
+  0% {
+    -webkit-transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-110px);
+    opacity: 1;
+  }
+}
+@-ms-keyframes topeaseinAnimate {
+  0% {
+    -webkit-transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-110px);
+    opacity: 1;
+  }
+}
+@-moz-keyframes topeaseinAnimate {
+  0% {
+    -webkit-transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-110px);
+    opacity: 1;
+  }
+}
+/*定义一个名字为topeaseinAnimate动画，实现从页面的左边淡入页面效果*/
+@keyframes lefteaseinAnimate {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  /*在0%时设置文字在想X轴500px位移处（左边），透明度为0，也就是看不见文字*/
+  100% {
+    transform: translateX(-1000px);
+    opacity: 1;
+  }
+  /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+@-webkit-keyframes lefteaseinAnimate {
+  0% {
+    -webkit-transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+    opacity: 1;
+  }
+}
+@-o-keyframes lefteaseinAnimate {
+  0% {
+    -webkit-transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+    opacity: 1;
+  }
+}
+@-ms-keyframes lefteaseinAnimate {
+  0% {
+    -webkit-transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+    opacity: 1;
+  }
+}
+@-moz-keyframes lefteaseinAnimate {
+  0% {
+    -webkit-transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+    opacity: 1;
+  }
+}
+/*定义一个名字为topeaseinAnimate动画，实现从页面的左边淡入页面效果*/
+@keyframes righteaseinAnimate {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  /*在0%时设置文字在想X轴500px位移处（左边），透明度为0，也就是看不见文字*/
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+@-webkit-keyframes righteaseinAnimate {
+  0% {
+    -webkit-transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@-o-keyframes righteaseinAnimate {
+  0% {
+    -webkit-transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@-ms-keyframes righteaseinAnimate {
+  0% {
+    -webkit-transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@-moz-keyframes righteaseinAnimate {
+  0% {
+    -webkit-transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    opacity: 1;
+  }
 }

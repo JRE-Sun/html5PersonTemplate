@@ -1,9 +1,15 @@
 $(function() {
-    // alert("<s></s>");
-    $('#aa').waypoint(function() {
-        // alert('B5教程网 www.bcty365.com');
-        $("#img1").fadeToggle("slow");
-    }, { offset: -304 });
+    // alert($(window).height());
+
+
+    $(".div2").waypoint(function() {
+        $("#img1").addClass("img1");
+        $("#img2").addClass("img2");
+        $("#img3").addClass("img3");
+        $("#img4").addClass("img4");
+        $("#img5").addClass("img5");
+        $("#img6").addClass("img6");
+    }, { offset: 250 });
 
     $(".div1").css("height", window.innerHeight + "px");
     $(".div2").css("height", window.innerHeight + "px");
@@ -28,21 +34,16 @@ $(function() {
         })
         // 固定导航条代码结束
 
+    $.scrollify({
+        section: ".panel"
+    });
+
     //内容信息导航锚点开始
     $('.navbar').navScroll({
         mobileDropdown: true,
         mobileBreakpoint: 768,
         scrollSpy: true
     });
-
-    // $('.click-me').navScroll({
-    //     navHeight: 0
-    // });
-
-    // $('.nav-wrap').on('click', '.nav-mobile', function(e) {
-    //     e.preventDefault();
-    //     $('.nav-wrap ul').slideToggle('fast');
-    // });
     //内容信息导航锚点结束
 
 });
