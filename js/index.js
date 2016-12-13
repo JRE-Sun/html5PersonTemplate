@@ -46,4 +46,13 @@ $(function() {
     });
     //内容信息导航锚点结束
 
+    $("#rocket-to-top").click(function() {
+        $("html,body").animate({ scrollTop: $(window).scrollTop() + $(window).height() }, "slow");
+    });
+
+    $("#rocket-to-top").hover(function() {
+        $(this).css("background", "url(images/向下箭头2.png) no-repeat");
+    }, function() {
+        $(this).css("background", "url(images/向下箭头1.png) no-repeat");
+    });
 });
